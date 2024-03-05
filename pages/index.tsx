@@ -1,9 +1,11 @@
+import Navbar from '../components/Navbar';
 import Head from 'next/head';
 import Image from 'next/image';
 
 export default function Home() {
   return (
     <div>
+      <Navbar />
       <Head>
         <title>DanMagro</title>
         <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet"></link>

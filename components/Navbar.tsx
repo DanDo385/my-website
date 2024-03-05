@@ -9,7 +9,7 @@ const Navbar = () => {
                     <h1>DAN MAGRO</h1>
                     <p>Blockchain Developer</p>
                 </div>
-                <Select />
+                <SelectMenu />
             </div>
         </nav>
     );
