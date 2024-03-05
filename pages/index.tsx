@@ -11,11 +11,11 @@ export default function Home() {
       
       {/* Setting the background image */}
       <div className="h-screen bg-cover bg-center" style={{ backgroundImage: 'url(./blockchaindots.jpg)' }}>
-        {/* Text with Electrolize font and TailwindCSS text color */}
+        {/* Text with Electrolize font and TailwindCSS text color and size */}
         <div className="flex flex-col items-center justify-center h-full">
-          <h1 className="font-electrolize text-green-300 text-center" style={{ fontFamily: 'Electrolize, sans-serif' }}>
+          <h2 className="font-electrolize text-green-300 text-center text-4xl" style={{ fontFamily: 'Electrolize, sans-serif' }}>
             Hello, my name is Dan Magro and this is my website to showcase my credentials as a Blockchain Developer.
-          </h1>
+          </h2>
           {/* Image under the text */}
           <div className="mt-10">
             <Image src="/landing.jpg" alt="Landing Image" width={600} height={600} />
