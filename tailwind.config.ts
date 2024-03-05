@@ -1,15 +1,17 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 
-const config = {
-  darkMode: ["class"],
+const config: Config = {
+  darkMode: "class",
   content: [
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
-	],
-  prefix: "",
+  ],
   theme: {
+    fontFamily: {
+      electrolize: ['Electrolize', 'sans-serif'],
+    },
     container: {
       center: true,
       padding: "2rem",
@@ -74,7 +76,10 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
-} satisfies Config
+  plugins: [
+    // Assuming you have installed tailwindcss-animate or any other plugin
+    require("tailwindcss-animate"),
+  ],
+};
 
-export default config
+export default config;
