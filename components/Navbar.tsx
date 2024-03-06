@@ -1,69 +1,65 @@
-import { useState, useEffect } from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
+import { useState, useEffect } from 'react';
 
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const [isSmallScreen, setIsSmallScreen] = useState(false);
 
-  const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen);
-  };
-
+  // Effect to add event listener for window resize
   useEffect(() => {
-    // Handler to call on window resize
     function handleResize() {
-      // Set isSmallScreen true if window width is less than 768px
-      setIsSmallScreen(window.innerWidth < 768);
+      if (window.innerWidth >= 640) {
+        setIsSidebarOpen(false); // Automatically close sidebar on larger screens
+      }
     }
 
-    // Add event listener
     window.addEventListener('resize', handleResize);
-
-    // Call handler right away so state gets updated with initial window size
-    handleResize();
-
-    // Remove event listener on cleanup
     return () => window.removeEventListener('resize', handleResize);
-  }, []); // Empty array ensures that effect is only run on mount and unmount
+  }, []);
 
   return (
     <>
-      <div className="bg-green-400 p-4 flex items-center justify-between">
-        {isSmallScreen && (
-          <div onClick={toggleSidebar} className="z-50 cursor-pointer">
-            <Image src="/avatar.png" alt="Avatar" width="50" height="50" className="rounded-full" />
-          </div>
-        )}
-        <div className="flex-grow flex justify-center items-center">
-          {!isSidebarOpen && (
-            <div className="hidden sm:flex gap-4 font-electrolize">
-              <Link href="/" className="hover:text-slate-900 px-3 py-2 cursor-pointer">Home</Link>
-              <Link href="/blog" className="hover:text-slate-900 px-3 py-2 cursor-pointer">Blog</Link>
-              <Link href="/certs" className="hover:text-slate-900 px-3 py-2 cursor-pointer">Certifications</Link>
-              <Link href="/education" className="hover:text-slate-900 px-3 py-2 cursor-pointer">Education</Link>
-              <Link href="/experience" className="hover:text-slate-900 px-3 py-2 cursor-pointer">Experience</Link>
-              <Link href="/portfolio" className="hover:text-slate-900 px-3 py-2 cursor-pointer">Portfolio</Link>
-              <Link href="/resume" className="hover:text-slate-900 px-3 py-2 cursor-pointer">Resume</Link>
-            </div>
-          )}
-        </div>
-        <div className="text-right">
+      {/* Sidebar for mobile */}
+      <div className={`fixed inset-0 bg-green-400 p-4 flex flex-col z-50 transform ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out sm:hidden`}>
+        <div>
           <h1 className="text-slate-700 font-bold text-2xl font-electrolize">DANIEL MAGRO</h1>
           <h2 className="text-slate-700 font-electrolize font-bold italic text-xl">Blockchain Developer</h2>
         </div>
-      </div>
-      {isSidebarOpen && (
-        <div className="fixed top-0 left-0 w-64 h-full bg-green-400 z-50 p-4 sm:hidden">
-          <Link href="/" className="block hover:text-slate-900 px-3 py-2 cursor-pointer">Home</Link>
-          <Link href="/blog" className="block hover:text-slate-900 px-3 py-2 cursor-pointer">Blog</Link>
-          <Link href="/certs" className="block hover:text-slate-900 px-3 py-2 cursor-pointer">Certifications</Link>
-          <Link href="/education" className="block hover:text-slate-900 px-3 py-2 cursor-pointer">Education</Link>
-          <Link href="/experience" className="block hover:text-slate-900 px-3 py-2 cursor-pointer">Experience</Link>
-          <Link href="/portfolio" className="block hover:text-slate-900 px-3 py-2 cursor-pointer">Portfolio</Link>
-          <Link href="/resume" className="block hover:text-slate-900 px-3 py-2 cursor-pointer">Resume</Link>
+        <div className="flex flex-col gap-4 mt-4">
+          <Link href="/">Home</Link>
+          <Link href="/blog">Blog</Link>
+          <Link href="/certs">Certifications</Link>
+          <Link href="/education">Education</Link>
+          <Link href="/experience">Experience</Link>
+          <Link href="/portfolio">Portfolio</Link>
+          <Link href="/resume">Resume</Link>
         </div>
-      )}
+      </div>
+
+      {/* Button for opening the sidebar, now using an avatar image */}
+      <div className="sm:hidden p-4 absolute top-0 right-0 z-50" onClick={() => setIsSidebarOpen(!isSidebarOpen)}>
+        <img src="/avatar.png" alt="Menu" className="w-8 h-8"/>
+      </div>
+
+      {/* Navbar for larger screens */}
+      <div className="bg-green-400 p-4 flex justify-between items-center hidden sm:flex">
+        <div>
+          <h1 className="text-slate-700 font-bold text-2xl font-electrolize">DANIEL MAGRO</h1>
+          <h2 className="text-slate-700 font-electrolize font-bold italic text-xl">Blockchain Developer</h2>
+        </div>
+        <div className="flex-grow">
+          <div className="flex justify-center gap-4 font-electrolize">
+            <Link href="/">Home</Link>
+            <Link href="/blog">Blog</Link>
+            <Link href="/certs">Certifications</Link>
+            <Link href="/education">Education</Link>
+            <Link href="/experience">Experience</Link>
+            <Link href="/portfolio">Portfolio</Link>
+            <Link href="/resume">Resume</Link>
+          </div>
+        </div>
+        {/* This empty div ensures the flexbox space-between effect aligns the content properly */}
+        <div></div>
+      </div>
     </>
   );
 };
