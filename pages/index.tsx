@@ -4,10 +4,10 @@ import Image from 'next/image';
 
 const Home = () => {
     return (
-        <div>
+        <>
             <Navbar />
             <Head>
-                <title>DanMagro</title>
+                <title>DanielMagro</title>
                 <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet"></link>
             </Head>
             
@@ -24,7 +24,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 }
 export default Home;

@@ -1,4 +1,5 @@
 // pages/certs.tsx
+import Head from 'next/head';
 import Carousel from '../components/Carousel';
 import Navbar from '../components/Navbar';  
 
@@ -16,6 +17,11 @@ const Certs = () => {
 return (
     <>
         <Navbar />
+        <Head>
+            <title>Certificates</title>
+            <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet"></link>
+        </Head>
+        
         <div className="container mx-auto px-4">
             <Carousel images={images} />
         </div>
