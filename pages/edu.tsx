@@ -1,14 +1,15 @@
 // pages/edu.tsx
 import Navbar from "../components/Navbar";
+import CornerImages from "../components/CornerImages";
 import Head from "next/head";
 
 const edu = () => {
   return (
     <>
         <Navbar />
+        <CornerImages />
         <Head>
-            <title>Certificates</title>
-            <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet"></link>
+            <title>Education</title>
         </Head>
     </>
   )
