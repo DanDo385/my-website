@@ -41,7 +41,7 @@ const Navbar = () => {
       </div>
 
       {/* Navbar for larger screens */}
-      <div className="bg-green-400 p-4 flex justify-between items-center hidden sm:flex">
+      <div className="bg-green-400 p-4 justify-between items-center hidden sm:flex">
         <div>
           <h1 className="text-slate-700 font-bold text-2xl font-electrolize">DANIEL MAGRO</h1>
           <h2 className="text-slate-700 font-electrolize font-bold italic text-xl">Blockchain Developer</h2>

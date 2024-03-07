@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Navbar from './Navbar';
 
 const EduFmt = () => {
   // Images for the corners
@@ -10,6 +11,7 @@ const EduFmt = () => {
   ];
 
   return (
+  <>
     <div className="relative min-h-screen flex justify-center items-center pt-[56px]">
       {/* Corner Images */}
       {cornerImages.map((image, index) => (
@@ -27,15 +29,15 @@ const EduFmt = () => {
         </div>
         <table className="table-auto w-full">
           <tbody>
-            <tr>
+            <tr className="bg-slate-100">
               <td className="border px-4 py-2">Class:</td>
               <td className="border px-4 py-2">2006</td>
             </tr>
-            <tr className="bg-gray-100">
+            <tr >
               <td className="border px-4 py-2">Major:</td>
               <td className="border px-4 py-2">Finance</td>
             </tr>
-            <tr>
+            <tr className="bg-slate-100">
               <td className="border px-4 py-2">Honors:</td>
               <td className="border px-4 py-2">Magna Cum Laude</td>
             </tr>
@@ -43,7 +45,7 @@ const EduFmt = () => {
               <td className="border px-4 py-2">GPA:</td>
               <td className="border px-4 py-2">3.73</td>
             </tr>
-            <tr className="bg-gray-100">
+            <tr className="bg-slate-100">
               <td className="border px-4 py-2">Major GPA:</td>
               <td className="border px-4 py-2">3.93</td>
             </tr>
@@ -52,6 +54,7 @@ const EduFmt = () => {
         </table>
       </div>
     </div>
+  </>
   );
 };
 
