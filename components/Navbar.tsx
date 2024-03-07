@@ -1,10 +1,11 @@
+// components/Navbar.tsx
 import Link from 'next/link';
+import Image from 'next/image'; // Import the Image component from Next.js
 import { useState, useEffect } from 'react';
 
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
-  // Effect to add event listener for window resize
   useEffect(() => {
     function handleResize() {
       if (window.innerWidth >= 640) {
@@ -35,9 +36,9 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Button for opening the sidebar, now using an avatar image */}
+      {/* Button for opening the sidebar, now using an avatar image with Next.js Image component */}
       <div className="sm:hidden p-4 absolute top-0 right-0 z-50" onClick={() => setIsSidebarOpen(!isSidebarOpen)}>
-        <img src="/avatar.png" alt="Menu" className="w-8 h-8"/>
+        <Image src="/avatar.png" alt="Menu" width={32} height={32} className="w-8 h-8 rounded-full"/> {/* Adjusted to use Image */}
       </div>
 
       {/* Navbar for larger screens */}
