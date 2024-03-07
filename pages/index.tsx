@@ -15,7 +15,7 @@ const Home = () => {
                 {/* Text with Electrolize font and TailwindCSS text color and size */}
                 <div className="flex flex-col items-center justify-center h-full">
                     <h2 className="font-electrolize text-green-300 text-center text-2xl" style={{ fontFamily: 'Electrolize, sans-serif' }}>
-                        Hello, my name is Dan Magro and this is my website to showcase my credentials as a Blockchain Developer. My brain cannot stop thinking about code or use cases for Blockchain Technology.
+                        Hello, my name is Dan and this is my website to showcase my credentials as a blockchain developer. My brain cannot stop thinking about code or use cases for blockchain technology.
                     </h2>
                     {/* Image under the text */}
                     <div className="mt-10">
