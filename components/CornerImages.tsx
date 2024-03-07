@@ -2,20 +2,22 @@
 import Image from 'next/image';
 
 const CornerImages = () => {
+  // Your images remain the same
+  const images = [
+    { src: '/pennst/psu1.jpg', position: 'top-16 left-0' },
+    { src: '/pennst/psu2.jpg', position: 'top-16 right-0' },
+    { src: '/pennst/psu3.jpg', position: 'bottom-0 left-0' },
+    { src: '/pennst/psu4.jpg', position: 'bottom-0 right-0' },
+  ];
+
   return (
-    <div className="grid grid-cols-2 gap-4 my-8">
-      <div className="relative w-[200px] h-[200px]"> {/* Adjust the width and height as needed */}
-        <Image src="/pennst/psu1.jpg" alt="Image 1" fill className="object-contain" />
-      </div>
-      <div className="relative w-[200px] h-[200px]">
-        <Image src="/pennst/psu2.jpg" alt="Image 2" fill className="object-contain" />
-      </div>
-      <div className="relative w-[200px] h-[200px]">
-        <Image src="/pennst/psu3.jpg" alt="Image 3" fill className="object-contain" />
-      </div>
-      <div className="relative w-[200px] h-[200px]">
-        <Image src="/pennst/psu4.jpg" alt="Image 4" fill className="object-contain" />
-      </div>
+    <div className="relative min-h-screen pt-[56px]"> {/* Adjust for your navbar height */}
+      {images.map((image, index) => (
+        <div key={index} className={`absolute ${image.position} w-[276px] h-[276px]`}>
+          {/* Next.js 13+ compliant Image usage */}
+          <Image src={image.src} alt={`Image ${index + 1}`} className="w-full h-full object-contain" width={333} height={333}/>
+        </div>
+      ))}
     </div>
   );
 };
