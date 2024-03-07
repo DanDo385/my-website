@@ -11,6 +11,8 @@ const edu = () => {
         <Head>
             <title>Education</title>
         </Head>
+    
+    
     </>
   )
 }
