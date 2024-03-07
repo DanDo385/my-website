@@ -1,4 +1,3 @@
-// components/Navbar.tsx
 import Link from 'next/link';
 import Image from 'next/image'; // Import the Image component from Next.js
 import { useState, useEffect } from 'react';

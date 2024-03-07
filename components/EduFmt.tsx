@@ -36,6 +36,10 @@ const EduFmt = () => {
               <td className="border px-4 py-2">Finance</td>
             </tr>
             <tr>
+              <td className="border px-4 py-2">Honors:</td>
+              <td className="border px-4 py-2">Magna Cum Laude</td>
+            </tr>
+            <tr>
               <td className="border px-4 py-2">GPA:</td>
               <td className="border px-4 py-2">3.73</td>
             </tr>
@@ -43,10 +47,7 @@ const EduFmt = () => {
               <td className="border px-4 py-2">Major GPA:</td>
               <td className="border px-4 py-2">3.93</td>
             </tr>
-            <tr>
-              <td className="border px-4 py-2">Honors:</td>
-              <td className="border px-4 py-2">Magna Cum Laude</td>
-            </tr>
+            
           </tbody>
         </table>
       </div>

@@ -8,11 +8,12 @@ import EduFmt from "@/components/EduFmt";
 const edu = () => {
   return (
     <>
-      
+      <div className="bg-blue-900 min-h-screen">
         <Head>
         <title>Education</title>
         </Head>
         <EduFmt />
+      </div>
     </>
   )
 }
