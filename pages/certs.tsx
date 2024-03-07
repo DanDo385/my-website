@@ -1,31 +1,28 @@
 // pages/certs.tsx
 import Head from 'next/head';
 import Carousel from '../components/Carousel';
-import Navbar from '../components/Navbar';  
+
+const images = [
+  '/certs/udemy.jpg',
+  '/certs/dappu.jpg',
+  '/certs/upenn.jpg',
+  '/certs/duke-full.jpg',
+  '/certs/insead-full.jpg',
+  '/certs/cryptography.jpg',
+];
 
 const Certs = () => {
-    //Images for the carousel
-    const images = [
-    '/certs/udemy.jpg',
-    '/certs/dappu.jpg',
-    '/certs/upenn.jpg',
-    '/certs/duke-full.jpg',
-    '/certs/insead-full.jpg',
-    '/certs/cryptography.jpg',
-  ];
-
-return (
+  return (
     <>
-        <Navbar />
-        <Head>
-            <title>Certificates</title>
-        </Head>
-        
-        <div className="container mx-auto px-4">
-            <Carousel images={images} />
-        </div>
+      <Head>
+        <title>Certificates Carousel</title>
+      </Head>
+      <div className="container mx-auto mt-8">
+        <Carousel images={images} />
+      </div>
     </>
-);
-}
+  );
+};
 
 export default Certs;
+
