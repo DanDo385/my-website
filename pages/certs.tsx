@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Carousel from '../components/Carousel';
 
 const images = [
+  '/certs/rutgers.jpg',
   '/certs/udemy.jpg',
   '/certs/dappu.jpg',
   '/certs/upenn.jpg',
