@@ -1,9 +1,9 @@
 // pages/edu.tsx
 import Navbar from "../components/Navbar";
 import Head from "next/head";
-import EduFmt from "@/components/EduFmt";
+import EducationFormat from "@/components/EducationFormat";
 
-const edu = () => {
+const education = () => {
   return (
     <>
       <Navbar />
@@ -11,10 +11,10 @@ const edu = () => {
         <Head>
         <title>Education</title>
         </Head>
-        <EduFmt />
+        <EducationFormat />
       </div>
     </>
   )
 }
 
-export default edu;
+export default education;

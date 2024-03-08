@@ -50,7 +50,7 @@ const Navbar = () => {
           <div className="flex justify-center gap-4 font-electrolize">
             <Link href="/">Home</Link>
             <Link href="/blog">Blog</Link>
-            <Link href="/certs">Certifications</Link>
+            <Link href="/certifications">Certifications</Link>
             <Link href="/education">Education</Link>
             <Link href="/experience">Experience</Link>
             <Link href="/portfolio">Portfolio</Link>

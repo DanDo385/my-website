@@ -4,27 +4,27 @@ import Head from "next/head";
 import Image from "next/image";
 
 const Blog = () => {
-    return (
-        <>
-            <Navbar />
-            <Head>
-                <title>Blog</title>
-            </Head>
+  return (
+    <>
+      <Navbar />
+      <Head>
+        <title>Blog</title>
+      </Head>
             
-            <div className="h-screen bg-cover bg-center" style={{ backgroundImage: 'url(./blockchaindots.jpg)' }}>
-                <div className="flex flex-col items-center justify-center h-full">
-                    <h2 className="font-electrolize text-green-300 text-center text-2xl" style={{ fontFamily: 'Electrolize, sans-serif' }}>
-                        Click on the image below to see my blog, C2DeFi.com
-                    </h2>
-                    <div className="mt-10">
-                        <a href="https://www.c2defi.com" target="_blank" rel="noopener noreferrer">
-                            <Image src="/blog.jpg" alt="Blog Image" width={459} height={411} />
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </>
-    );
+      <div className="h-screen bg-cover bg-center" style={{ backgroundImage: 'url(./blockchaindots.jpg)' }}>
+        <div className="flex flex-col items-center justify-center h-full">
+          <h2 className="font-electrolize text-green-300 text-center text-2xl" style={{ fontFamily: 'Electrolize, sans-serif' }}>
+            Click on the image below to see my blog, C2DeFi.com
+          </h2>
+          <div className="mt-10">
+            <a href="https://www.c2defi.com" target="_blank" rel="noopener noreferrer">
+              <Image src="/blog.jpg" alt="Blog Image" width={459} height={411} />
+            </a>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 };
 
 export default Blog;

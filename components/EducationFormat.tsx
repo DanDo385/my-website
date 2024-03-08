@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Navbar from './Navbar';
 
-const EduFmt = () => {
+const EducationFormat = () => {
   // Images for the corners
   const cornerImages = [
     { src: '/pennst/psu1.jpg', position: 'top-0 left-0' },
@@ -58,4 +58,4 @@ const EduFmt = () => {
   );
 };
 
-export default EduFmt;
+export default EducationFormat;
