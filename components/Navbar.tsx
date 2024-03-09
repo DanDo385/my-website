@@ -1,3 +1,4 @@
+// Navbar.tsx
 import Link from 'next/link';
 import Image from 'next/image'; // Import the Image component from Next.js
 import { useState, useEffect } from 'react';
@@ -21,8 +22,8 @@ const Navbar = () => {
       {/* Sidebar for mobile */}
       <div className={`fixed inset-0 bg-green-400 p-4 flex flex-col z-50 transform ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out sm:hidden`}>
         <div>
-          <h1 className="text-slate-900 font-bold text-2xl font-electrolize">DANIEL MAGRO</h1>
-          <h2 className="text-slate-900 font-electrolize font-bold italic text-xl">Blockchain Developer</h2>
+          <h1 className="text-slate-900 font-bold text-2xl font-montserrat">DANIEL MAGRO</h1>
+          <h2 className="text-slate-900 font-montserrat font-bold italic text-xl">Blockchain Developer</h2>
         </div>
         <div className="flex flex-col gap-4 mt-4">
           <Link href="/">Home</Link>
@@ -43,11 +44,11 @@ const Navbar = () => {
       {/* Navbar for larger screens */}
       <div className="bg-green-400 p-4 justify-between items-center hidden sm:flex">
         <div>
-          <h1 className="text-slate-900 font-bold text-2xl font-electrolize">DANIEL MAGRO</h1>
-          <h2 className="text-slate-900 font-electrolize font-bold italic text-xl">Blockchain Developer</h2>
+          <h1 className="text-slate-900 font-bold text-2xl font-montserrat">DANIEL MAGRO</h1>
+          <h2 className="text-slate-900 font-montserrat font-bold italic text-xl">Blockchain Developer</h2>
         </div>
         <div className="flex-grow">
-          <div className="flex justify-center gap-4 font-electrolize">
+          <div className="flex justify-center gap-4 font-montserrat">
             <Link href="/">Home</Link>
             <Link href="/blog">Blog</Link>
             <Link href="/certifications">Certifications</Link>

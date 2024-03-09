@@ -1,6 +1,6 @@
 // components/EducationFormat.tsx
 import Image from 'next/image';
-import Navbar from './Navbar';
+
 
 const EducationFormat = () => {
   // Images for the corners
