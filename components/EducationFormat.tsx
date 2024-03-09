@@ -1,3 +1,4 @@
+// components/EducationFormat.tsx
 import Image from 'next/image';
 import Navbar from './Navbar';
 
