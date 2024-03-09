@@ -21,11 +21,11 @@ const ResumeSelect = () => {
 
   return (
     <>
-      <div className="bg-slate-900 text-xl text-green-400">
+      <div className="bg-slate-900 text-xl text-green-300">
         <select
           value={selectedOption}
           onChange={handleSelection}
-          className="bg-slate-900 text-xl text-green-400 p-2 rounded"
+          className="bg-slate-900 text-xl text-green-300 p-2 rounded"
           defaultValue=""
         >
         <option value="" disabled>Select Resume Location</option>

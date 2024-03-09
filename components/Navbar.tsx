@@ -20,7 +20,7 @@ const Navbar = () => {
   return (
     <>
       {/* Sidebar for mobile */}
-      <div className={`fixed inset-0 bg-green-400 p-4 flex flex-col z-50 transform ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out sm:hidden`}>
+      <div className={`fixed inset-0 bg-green-400 p-4 flex text-montserrat flex-col z-50 transform ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out sm:hidden`}>
         <div>
           <h1 className="text-slate-900 font-bold text-2xl font-montserrat">DANIEL MAGRO</h1>
           <h2 className="text-slate-900 font-montserrat font-bold italic text-xl">Blockchain Developer</h2>
