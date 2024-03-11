@@ -1,3 +1,4 @@
+// components/Im
 import React from 'react';
 import Image from 'next/image';
 
@@ -36,7 +37,7 @@ const ImageCards = () => {
         <div key={name} className="card bg-white shadow-lg rounded-lg p-4 m-4 flex flex-col items-center" style={{ width: '200px' }}>
           <Image src={src} alt={name} width={200} height={200} objectFit="cover" className="rounded-lg" />
           <h2 className="text-lg font-bold mt-2">{name}</h2>
-          <p className="text-md text-slate-500">
+          <p className="text-md text-slate-500 text-center">
             {Array.isArray(position) ? position.map((line, index) => (
               <React.Fragment key={index}>
                 {line}{index < position.length - 1 && <br />}

@@ -25,12 +25,12 @@ const EducationFormat = () => {
           <Image src="/psu5.jpg" alt="Avatar" width={50} height={50} className="rounded-full" />
           <div className="ml-3">
             <div className="font-bold text-xl">The Pennsylvania State University</div>
-            <p className="text-gray-700 text-base">University Park, PA</p>
+            <p className="text-slate-700 text-base">University Park, PA</p>
           </div>
         </div>
         <table className="table-auto w-full">
           <tbody>
-            <tr className="bg-slate-100">
+            <tr className="bg-slate-300">
               <td className="border px-4 py-2">Class:</td>
               <td className="border px-4 py-2">2006</td>
             </tr>
@@ -38,7 +38,7 @@ const EducationFormat = () => {
               <td className="border px-4 py-2">Major:</td>
               <td className="border px-4 py-2">Finance</td>
             </tr>
-            <tr className="bg-slate-100">
+            <tr className="bg-slate-300">
               <td className="border px-4 py-2">Honors:</td>
               <td className="border px-4 py-2">Magna Cum Laude</td>
             </tr>
@@ -46,7 +46,7 @@ const EducationFormat = () => {
               <td className="border px-4 py-2">GPA:</td>
               <td className="border px-4 py-2">3.73</td>
             </tr>
-            <tr className="bg-slate-100">
+            <tr className="bg-slate-300">
               <td className="border px-4 py-2">Major GPA:</td>
               <td className="border px-4 py-2">3.93</td>
             </tr>

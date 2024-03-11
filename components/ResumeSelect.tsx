@@ -5,7 +5,7 @@ import { useState } from 'react';
 const ResumeSelect = () => {
   const [selectedOption, setSelectedOption] = useState('');
 
-  const handleSelection = (event) => {
+  const handleSelection = (event: { target: { value: any; }; }) => {
     const value = event.target.value;
     setSelectedOption(value);
 
