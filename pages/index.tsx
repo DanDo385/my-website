@@ -14,7 +14,12 @@ const Home = () => {
             <div className="flex flex-col items-center justify-center h-full">
                 <h2 className="font-montserrat text-green-300 text-center text-2xl" style={{ fontFamily: 'montserrat, sans-serif' }}>
                 Hello, my name is Dan, and welcome to my website. <br />
-                Here, I showcase my expertise as a blockchain developer. I am deeply passionate about the vast potential of blockchain technology, especially in tokenizing various assets—a theme central to my portfolio. I am excited about the role I can play in advancing the decentralization of finance, striving to forge a fairer and more inclusive future.
+                Here, I showcase my credentials as a blockchain developer. <br />
+                I am deeply passionate about the vast potential of blockchain <br />
+                technology, especially in tokenizing various assets - a theme <br />
+                central to my portfolio. I am excited playing a role in <br />
+                advancing the decentralization of finance, striving to forge <br />
+                a fairer and more inclusive future.
                 
                 </h2>
                      <div className="mt-10">
