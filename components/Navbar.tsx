@@ -28,7 +28,7 @@ const Navbar = () => {
         <div className="flex flex-col gap-4 mt-4">
           <Link href="/">Home</Link>
           <Link href="/blog">Blog</Link>
-          <Link href="/certs">Certifications</Link>
+          <Link href="/certifications">Certifications</Link>
           <Link href="/education">Education</Link>
           <Link href="/experience">Experience</Link>
           <Link href="/portfolio">Portfolio</Link>

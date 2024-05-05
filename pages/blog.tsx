@@ -1,4 +1,4 @@
-//pages/blog.tsx
+// pages/blog.tsx
 import Navbar from "@/components/Navbar";
 import Head from "next/head";
 import Image from "next/image";
@@ -11,7 +11,7 @@ const Blog = () => {
         <title>Blog</title>
       </Head>
             
-      <div className="h-screen bg-cover bg-center" style={{ backgroundImage: 'url(./blocks.jpg)' }}>
+      <div className="h-screen bg-repeat bg-center" style={{ backgroundImage: 'url(./br.jpg)', backgroundSize: 'auto' }}>
         <div className="flex flex-col items-center justify-center h-full">
           <h2 className="font-montserrat text-green-300 text-center text-2xl" style={{ fontFamily: 'montserrat, sans-serif' }}>
             Click on the image below to see my blog, C2DeFi.com
