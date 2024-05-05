@@ -13,13 +13,8 @@ const Home = () => {
         <div className="h-screen bg-cover bg-center" style={{ backgroundImage: 'url(./blockchaindots.jpg)' }}>
             <div className="flex flex-col items-center justify-center h-full">
                 <h2 className="font-montserrat text-green-300 text-center text-2xl" style={{ fontFamily: 'montserrat, sans-serif' }}>
-                Hello, my name is Dan and this is my website to <br />
-                showcase my credentials as a blockchain developer. <br />
-                I believe there are an incomprehensible number of <br />
-                use cases for blockchain technology, particularly by <br />
-                tokenizing different assets as my portfolio focuses on <br />
-                and look forward to contributing to the decentralization <br />
-                of finance to create a more fair and inclusive future.
+                Hello, my name is Dan, and welcome to my website. <br />
+                Here, I showcase my expertise as a blockchain developer. I am deeply passionate about the vast potential of blockchain technology, especially in tokenizing various assets—a theme central to my portfolio. I am excited about the role I can play in advancing the decentralization of finance, striving to forge a fairer and more inclusive future.
                 
                 </h2>
                      <div className="mt-10">
