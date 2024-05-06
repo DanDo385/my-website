@@ -12,9 +12,6 @@ const ResumeSelect = () => {
     if (value === 'ipfs') {
       window.open('https://ipfs.io/ipns/k51qzi5uqu5dgkjaf7zt6nxstzmgbdi4k5oin4tilivkndufklhso4l7c1n1ml', '_blank');
     } else if (value === 'local') {
-      // Trigger local file download here
-      // For security reasons, browsers restrict direct file downloads from a select option,
-      // so you need a workaround like setting window.location or using a library to manage downloads.
       window.location.href = '/Daniel-Magro-Resume.pdf';
     }
   };

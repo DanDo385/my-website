@@ -19,7 +19,7 @@ const Home = () => {
                 technology, especially in tokenizing various assets - a theme <br />
                 central to my portfolio. I am excited playing a role in <br />
                 advancing the decentralization of finance, striving to forge <br />
-                a fairer and more inclusive future.
+                a fairer and more inclusive fincial system in the future.
                 
                 </h2>
                      <div className="mt-10">

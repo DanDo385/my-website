@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Setting the default text color using Tailwind's utility class */
+@layer base {
+  body, p, span, h1, h2, h3, h4, h5, h6, a, button, input, textarea, select {
+    @apply text-green-400;
+  }
+}
+
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  background-color: black;
 }
