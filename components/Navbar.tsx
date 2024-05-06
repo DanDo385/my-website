@@ -31,7 +31,7 @@ const Navbar = () => {
           <Link href="/certifications">Certifications</Link>
           <Link href="/education">Education</Link>
           <Link href="/experience">Experience</Link>
-          <Link href="/portfolio">Portfolio</Link>
+          <Link href="/projects">Projects</Link>
           <Link href="/resume">Resume</Link>
         </div>
       </div>
@@ -54,7 +54,7 @@ const Navbar = () => {
             <Link href="/certifications">Certifications</Link>
             <Link href="/education">Education</Link>
             <Link href="/experience">Experience</Link>
-            <Link href="/portfolio">Portfolio</Link>
+            <Link href="/projects">Projects</Link>
             <Link href="/resume">Resume</Link>
           </div>
         </div>
