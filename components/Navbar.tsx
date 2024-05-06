@@ -1,6 +1,6 @@
 // Navbar.tsx
 import Link from 'next/link';
-import Image from 'next/image'; // Import the Image component from Next.js
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
 const Navbar = () => {
@@ -20,45 +20,44 @@ const Navbar = () => {
   return (
     <>
       {/* Sidebar for mobile */}
-      <div className={`fixed inset-0 bg-green-400 p-4 flex text-montserrat flex-col z-50 transform ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out sm:hidden`}>
+      <div className={`fixed inset-0 bg-green-400 p-4 flex flex-col z-50 transform ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out sm:hidden font-poppins`}>
         <div>
-          <h1 className="text-black font-bold text-2xl font-montserrat">DANIEL MAGRO</h1>
-          <h2 className="text-black font-montserrat font-bold italic text-xl">Blockchain Developer</h2>
+          <h1 className="text-black font-bold text-2xl">DANIEL MAGRO</h1>
+          <h2 className="text-black font-bold italic text-xl">Blockchain Developer</h2>
         </div>
         <div className="flex flex-col gap-4 mt-4">
-          <Link href="/">Home</Link>
-          <Link href="/blog">Blog</Link>
-          <Link href="/certifications">Certifications</Link>
-          <Link href="/education">Education</Link>
-          <Link href="/experience">Experience</Link>
-          <Link href="/projects">Projects</Link>
-          <Link href="/resume">Resume</Link>
+          <Link href="/"><span className="text-black hover:text-green-400 hover:bg-black p-2 cursor-pointer">Home</span></Link>
+          <Link href="/blog"><span className="text-black hover:text-green-400 hover:bg-black p-2 cursor-pointer">Blog</span></Link>
+          <Link href="/certifications"><span className="text-black hover:text-green-400 hover:bg-black p-2 cursor-pointer">Certifications</span></Link>
+          <Link href="/education"><span className="text-black hover:text-green-400 hover:bg-black p-2 cursor-pointer">Education</span></Link>
+          <Link href="/experience"><span className="text-black hover:text-green-400 hover:bg-black p-2 cursor-pointer">Experience</span></Link>
+          <Link href="/projects"><span className="text-black hover:text-green-400 hover:bg-black p-2 cursor-pointer">Projects</span></Link>
+          <Link href="/resume"><span className="text-black hover:text-green-400 hover:bg-black p-2 cursor-pointer">Resume</span></Link>
         </div>
       </div>
 
-      {/* Button for opening the sidebar, now using an avatar image with Next.js Image component */}
+      {/* Button for opening the sidebar */}
       <div className="sm:hidden p-4 absolute top-0 right-0 z-50" onClick={() => setIsSidebarOpen(!isSidebarOpen)}>
-        <Image src="/avatar.png" alt="Menu" width={32} height={32} className="w-8 h-8 rounded-full"/> {/* Adjusted to use Image */}
+        <Image src="/avatar.png" alt="Menu" width={32} height={32} className="w-8 h-8 rounded-full"/>
       </div>
 
       {/* Navbar for larger screens */}
-      <div className="bg-green-400 p-4 justify-between items-center hidden sm:flex">
+      <div className="bg-green-400 p-4 justify-between items-center hidden sm:flex font-poppins">
         <div>
-          <h1 className="text-black font-bold text-2xl font-montserrat">DANIEL MAGRO</h1>
-          <h2 className="text-black font-montserrat font-bold italic text-xl">Blockchain Developer</h2>
+          <h1 className="text-black font-bold text-2xl">DANIEL MAGRO</h1>
+          <h2 className="text-black font-bold italic text-xl">Blockchain Developer</h2>
         </div>
         <div className="flex-grow">
-          <div className="flex justify-center gap-4 font-montserrat">
-            <Link href="/">Home</Link>
-            <Link href="/blog">Blog</Link>
-            <Link href="/certifications">Certifications</Link>
-            <Link href="/education">Education</Link>
-            <Link href="/experience">Experience</Link>
-            <Link href="/projects">Projects</Link>
-            <Link href="/resume">Resume</Link>
+          <div className="flex justify-center gap-4">
+            <Link href="/"><span className="text-black hover:text-green-400 hover:bg-black p-2 cursor-pointer">Home</span></Link>
+            <Link href="/blog"><span className="text-black hover:text-green-400 hover:bg-black p-2 cursor-pointer">Blog</span></Link>
+            <Link href="/certifications"><span className="text-black hover:text-green-400 hover:bg-black p-2 cursor-pointer">Certifications</span></Link>
+            <Link href="/education"><span className="text-black hover:text-green-400 hover:bg-black p-2 cursor-pointer">Education</span></Link>
+            <Link href="/experience"><span className="text-black hover:text-green-400 hover:bg-black p-2 cursor-pointer">Experience</span></Link>
+            <Link href="/projects"><span className="text-black hover:text-green-400 hover:bg-black p-2 cursor-pointer">Projects</span></Link>
+            <Link href="/resume"><span className="text-black hover:text-green-400 hover:bg-black p-2 cursor-pointer">Resume</span></Link>
           </div>
         </div>
-        {/* This empty div ensures the flexbox space-between effect aligns the content properly */}
         <div></div>
       </div>
     </>
