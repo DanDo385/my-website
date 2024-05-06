@@ -18,19 +18,25 @@ export default function Projects() {
     },
     {
       name: "DALL-E 3 AI Image Generator/NFT Minter",
-      languages: "Solidity, Next.js, TailwindCSS. DALL-E 3 API",
+      languages: "Solidity, Next.js, TailwindCSS, DALL-E 3 API",
       description: "Generate an AI Image with option to mint NFT",
       repoLink: "https://github.com/DanDo385/dalle-nft-minter"
     }
   ];
 
   return (
-    <Navbar />
-    <div className="flex flex-wrap justify-center gap-4 p-4">
-      <h1 className="text-center">Portfolio Projects</h1>
-      {projects.map((project, index) => (
-        <ProjectCard key={index} {...project} />
-      ))}
-    </div>
+    <>
+      <Navbar />
+      <div className="h-full bg-center bg-cover" style={{ backgroundImage: 'url(/github.jpg)' }}>
+        <div className="flex flex-col items-center justify-center min-h-screen">
+          <h1 className="text-3xl font-bold text-white mb-10">Portfolio Projects</h1>
+          <div className="flex flex-wrap justify-center gap-4 p-4">
+            {projects.map((project, index) => (
+              <ProjectCard key={index} {...project} />
+            ))}
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
