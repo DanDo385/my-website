@@ -6,9 +6,9 @@ export default function Projects() {
     {
       name: "DALL-E 3 AI Image Generator/NFT Minter",
       languages: "Solidity, Next.js, TailwindCSS",
-      description: "Smart contract for a unique NFT collection.",
+      description: "Generate an AI Image with option to mint NFT",
       repoLink: "https://github.com/DanDo385/dalle-nft-minter",
-      internalLink: "/project-details/bond-auction"
+      internalLink: "/project-details/ai-image-generator-nft"
     },
     {
       name: "Decentralized Bond Auction Simulation",
@@ -18,9 +18,9 @@ export default function Projects() {
       internalLink: "/project-details/bond-auction"
     },
     {
-      name: "Blockchain Analytics Tool",
-      languages: "Python, JavaScript",
-      description: "Tool for analyzing blockchain transactions.",
+      name: "De-Zillow",
+      languages: "Solidity, React.js",
+      description: "Tool for minting properties inspired by Zillow",
       repoLink: "https://github.com/yourusername/project3"
     }
   ];
