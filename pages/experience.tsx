@@ -11,11 +11,9 @@ const experience = () => {
             <title>Experience</title>
         </Head>
 
-        <div className="h-screen bg-cover bg-center" style={{ backgroundImage: 'url(./bull-br.jpg)' }}>
+        <div className="text-black h-screen bg-cover bg-center" style={{ backgroundImage: 'url(./bull-br.jpg)' }}>
             <div className="flex flex-col items-center justify-center h-full">
-                <h2 className="font-poppind text-black text-center text-2xl" style={{ fontFamily: 'poppins, sans-serif' }}>
-    
-                </h2>
+                <h2 className="font-poppind text-black text-center text-2xl" style={{ fontFamily: 'poppins, sans-serif' }}></h2>
                 <div className="mt-10">
                 <ImageCard />
                 </div>
