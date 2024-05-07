@@ -20,7 +20,7 @@ const config: Config = {
     },
     extend: {
       fontFamily: {
-        sans: ['Montserrat', 'sans-serif'],
+        sans: ['poppins', 'sans-serif'],
       },
       keyframes: {
         "accordion-down": {

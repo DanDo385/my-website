@@ -13,7 +13,7 @@ const Blog = () => {
             
       <div className="h-screen bg-repeat bg-center" style={{ backgroundImage: 'url(./br.jpg)', backgroundSize: 'auto' }}>
         <div className="flex flex-col items-center justify-center h-full">
-          <h2 className="font-montserrat text-green-300 text-center text-2xl" style={{ fontFamily: 'montserrat, sans-serif' }}>
+          <h2 className="font-poppins text-green-300 text-center text-2xl" style={{ fontFamily: 'poppins, sans-serif' }}>
             Click on the image below to see my blog, C2DeFi.com
           </h2>
           <div className="mt-10">
