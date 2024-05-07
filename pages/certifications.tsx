@@ -2,7 +2,7 @@
 import Head from 'next/head';
 import Carousel from '../components/Carousel';
 import Navbar from '../components/Navbar';
-import certImages from '../data/certs/certs';
+import certImages from '../data/certs';
 
 const Certs = () => {
   return (

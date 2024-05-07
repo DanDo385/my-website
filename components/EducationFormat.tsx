@@ -1,18 +1,25 @@
-// components/EducationFormat.tsx
 import Image from 'next/image';
 import { cornerImages, educationDetails } from '../data/psu';
 
 const EducationFormat = () => {
   return (
     <>
-      <div className="relative min-h-screen flex justify-center items-center pt-[56px]">
+      <div className="relative min-h-screen flex justify-center items-center w-full">
         {/* Corner Images */}
         {cornerImages.map((image, index) => (
-          <Image key={index} src={image.src} alt={`Corner Image ${index + 1}`} className={`absolute ${image.position} w-[276px] h-[276px] object-contain`} width={500} height={500} />
+          <Image 
+            key={index} 
+            src={image.src} 
+            alt={`Corner Image ${index + 1}`} 
+            className={`absolute ${image.position} w-[300px] h-[300px] object-contain`} 
+            layout="fixed" 
+            width={300} 
+            height={300}
+          />
         ))}
 
         {/* Centered Achievement Card */}
-        <div className="max-w-md rounded overflow-hidden shadow-lg bg-white p-4 z-10">
+        <div className="text-black max-w-md rounded overflow-hidden shadow-lg bg-white p-4 z-10">
           <div className="flex items-center mb-4">
             <Image src="/psu5.jpg" alt="Avatar" width={100} height={100} className="rounded-full" />
             <div className="ml-3">
@@ -26,7 +33,7 @@ const EducationFormat = () => {
                 <td className="border px-4 py-2">Class:</td>
                 <td className="border px-4 py-2">{educationDetails.classYear}</td>
               </tr>
-              <tr >
+              <tr>
                 <td className="border px-4 py-2">Major:</td>
                 <td className="border px-4 py-2">{educationDetails.major}</td>
               </tr>
