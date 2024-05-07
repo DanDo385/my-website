@@ -1,4 +1,4 @@
-// pages/certs.tsx
+// pages/certifications.tsx
 import Head from 'next/head';
 import Carousel from '../components/Carousel';
 import Navbar from '../components/Navbar';
