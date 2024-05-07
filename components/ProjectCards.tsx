@@ -7,9 +7,9 @@ const ProjectCards = ({ name, languages, description, repoLink }) => {
       <h3 className="text-lg font-semibold text-white">{name}</h3>
       <p className="text-sm text-gray-200">Technologies Used: {languages || 'N/A'}</p>
       <p className="text-sm text-gray-400">{description || 'No description available'}</p>
-      <a href={repoLink || '#'} className="mt-4 text-green-400 hover:underline">GitHub Repository</a>
+      <a href={repoLink || '#'} className="mt-4 text-white hover:underline hover:text-white">GitHub Repository</a>
     </div>
   );
 };
 
-export default ProjectCard;
+export default ProjectCards;
