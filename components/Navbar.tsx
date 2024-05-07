@@ -31,7 +31,7 @@ const Navbar = () => {
           <Link href="/certifications"><span className="text-black hover:text-green-400 hover:bg-black p-2 cursor-pointer">Certifications</span></Link>
           <Link href="/education"><span className="text-black hover:text-green-400 hover:bg-black p-2 cursor-pointer">Education</span></Link>
           <Link href="/experience"><span className="text-black hover:text-green-400 hover:bg-black p-2 cursor-pointer">Experience</span></Link>
-          <Link href="/projects"><span className="text-black hover:text-green-400 hover:bg-black p-2 cursor-pointer">Projects</span></Link>
+          <Link href="/portfolio"><span className="text-black hover:text-green-400 hover:bg-black p-2 cursor-pointer">Portfolio</span></Link>
           <Link href="/resume"><span className="text-black hover:text-green-400 hover:bg-black p-2 cursor-pointer">Resume</span></Link>
         </div>
       </div>
@@ -54,7 +54,7 @@ const Navbar = () => {
             <Link href="/certifications"><span className="text-black hover:text-green-400 hover:bg-black p-2 cursor-pointer">Certifications</span></Link>
             <Link href="/education"><span className="text-black hover:text-green-400 hover:bg-black p-2 cursor-pointer">Education</span></Link>
             <Link href="/experience"><span className="text-black hover:text-green-400 hover:bg-black p-2 cursor-pointer">Experience</span></Link>
-            <Link href="/projects"><span className="text-black hover:text-green-400 hover:bg-black p-2 cursor-pointer">Projects</span></Link>
+            <Link href="/portfolio"><span className="text-black hover:text-green-400 hover:bg-black p-2 cursor-pointer">Portfolio</span></Link>
             <Link href="/resume"><span className="text-black hover:text-green-400 hover:bg-black p-2 cursor-pointer">Resume</span></Link>
           </div>
         </div>

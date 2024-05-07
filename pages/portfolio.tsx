@@ -1,6 +1,6 @@
-// pages/projects.tsx
+// pages/portfolio.tsx
 import Navbar from '../components/Navbar';
-import ProjectCard from '../components/ProjectCard';
+import ProjectCard from '../components/ProjectCards';
 import projects from '../data/projects';  // Import projects from your data folder
 
 export default function Projects() {
