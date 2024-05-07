@@ -1,16 +1,20 @@
-import Link from 'next/link';
+// pages/projects.js
+import Navbar from '../components/Navbar';
+import ProjectCard from '../components/ProjectCard';
+import projects from '../data/projects';
 
-const ProjectCard = ({ name, languages, description, repoLink }) => {
+export default function Projects() {
   return (
-    <div className="flex flex-col items-start justify-between p-6 bg-black rounded-lg border border-green-400 shadow-md text-green-400 hover:font-bold">
-      <h3 className="text-lg">{name}</h3>
-      <p className="text-sm">{languages}</p>
-      <p className="text-sm">{description}</p>
-      <Link href={repoLink} passHref>
-        <span className="mt-4 hover:underline">GitHub Repository</span>
-      </Link>
-    </div>
+    <>
+      <Navbar />
+      <div className="flex flex-col items-center justify-center min-h-screen">
+        <h1 className="text-3xl font-bold text-white mb-10">Portfolio Projects</h1>
+        <div className="flex flex-wrap justify-center gap-4 p-4">
+          {projects.map((project, index) => (
+            <ProjectCard key={index} {...project} />
+          ))}
+        </div>
+      </div>
+    </>
   );
-};
-
-export default ProjectCard;
+}
