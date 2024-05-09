@@ -1,3 +1,4 @@
+//pages/index.jsx
 import Navbar from '../components/Navbar';
 import Head from 'next/head';
 import Image from 'next/image';
