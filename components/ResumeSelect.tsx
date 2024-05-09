@@ -10,7 +10,7 @@ const ResumeSelect = () => {
     setSelectedOption(value);
 
     if (value === 'ipfs') {
-      window.open('https://ipfs.io/ipns/k51qzi5uqu5dgkjaf7zt6nxstzmgbdi4k5oin4tilivkndufklhso4l7c1n1ml', '_blank');
+      window.open('https://ipfs.io/ipfs/QmYaQaPwexLTMikb4Du7ADcv76nE9FQ1Ebhw53LA3D3JpQ?filename=Daniel%20Magro%20Resume.pdf', '_blank');
     } else if (value === 'local') {
       window.location.href = '/Daniel-Magro-Resume.pdf';
     }
